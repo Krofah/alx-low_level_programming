@@ -12,24 +12,28 @@ int main(void)
 
 	for (a = '0'; a < '9'; a++)
 	{
-		for (b = a + 1; b <= '9'; c++)
+		for (b = a + 1; b <= '9'; b++)
 		{
-			if (a != b && b != c)
+			for (c = b + 1; c <= '9'; c++)
 			{
-				putchar(a);
-				putchar(b);
-				putchar(c);
+				if (a != b && b != c)
+				{
+					putchar(a);
+					putchar(b);
+					putchar(c);
 
-				if (a == '7' && b == '8')
+					if (a == '7' && b == '8')
 
-					continue;
+						continue;
 
-				putchar(',');
-				putchar(' ');
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
 	putchar('\n');
 
 	return (0);
+
 }
