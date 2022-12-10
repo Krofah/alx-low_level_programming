@@ -1,38 +1,34 @@
 #include <stdio.h>
+#include <stdio.h>
 
 /**
- * main - prints all possible different combinations of three digits
- *
- * Return: Always 0 (success)
+ * main - retrunds a combination of number
+ * Return: return 0 if successful
  */
 
 int main(void)
 {
-	int a, b, c;
+	int i, j;
 
-	for (a = '0'; a < '9'; a++)
+	for (i = 0; i < 100; i++)
 	{
-		for (b = a + 1; b <= '9'; b++)
+		for (j = 0; j < 100; j++)
 		{
-			for (c = b + 1; c <= '9'; c++)
+			if (i < j)
 			{
-				if (a != b && b != c)
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
 				{
-					putchar(a);
-					putchar(b);
-					putchar(c);
-
-					if (a == '7' && b == '8')
-
-						continue;
-
 					putchar(',');
 					putchar(' ');
 				}
 			}
 		}
 	}
-	putchar('\n');
-
+	putchar ('\n');
 	return (0);
 }
