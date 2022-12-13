@@ -2,7 +2,8 @@
 
 /**
  * print_last_digit - print the last digit
- * @n: the number
+ * @n: the number in question
+ *
  * Return: value of the last digit
  */
 int print_last_digit(int n)
@@ -14,5 +15,5 @@ int print_last_digit(int n)
 
 	_putchar(ld + '0');
 
-	return (0);
+	return (ld);
 }
