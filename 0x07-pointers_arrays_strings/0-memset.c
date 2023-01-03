@@ -2,7 +2,7 @@ include "main.h"
 
 /**
  * _memset - function fill the first @n bytes
- * Owned by Krofah
+ *
  * to by @s with the constant byte @b
  *
  * @n: bytes of the memory area pointed to by @s
