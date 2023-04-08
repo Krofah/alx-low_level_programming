@@ -148,7 +148,8 @@ void shash_table_print(const shash_table_t *ht)
  * @ht: hash table to print
  */
 void shash_table_print_rev(const shash_table_t *ht)
-{shash_node_t *tail = NULL;
+{
+	shash_node_t *tail = NULL;
 
 	if (!ht)
 		return;
